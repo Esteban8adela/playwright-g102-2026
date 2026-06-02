@@ -27,6 +27,19 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
+    video: {
+      mode: 'on', 
+      size: {
+        width: 800,
+        height: 600,
+      },
+      show: {
+        actions: {
+          duration: 1000,
+          position: 'top-right',
+          fontSize: 16,        }
+      }
+    },
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -34,10 +47,10 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    },
+    //{
+    //  name: 'chromium',
+    //  use: { ...devices['Desktop Chrome'] },
+    //},
 
     {
       name: 'firefox',

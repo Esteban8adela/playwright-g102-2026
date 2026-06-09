@@ -13,5 +13,9 @@
   "devDependencies": {
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.8.0"
+  },
+  "dependencies": {
+    "@types/react": "^19.2.16",
+    "react": "^19.2.7"
   }
 }
